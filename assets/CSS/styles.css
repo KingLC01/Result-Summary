@@ -1,0 +1,343 @@
+body#body-wrapper {
+  max-width: 1440px;
+  height: auto;
+  margin: auto;
+  font-family: Hanken Grotesk;
+  justify-content: center;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+  }
+}
+/* Result Start */
+.result-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 40vh;
+  box-shadow: -1px 20px 30px rgb(233, 233, 233);
+  border-radius: 32px;
+  background-image: linear-gradient(
+    180deg,
+    hsla(252, 100%, 67%),
+    hsl(246, 81%, 54%)
+  );
+}
+
+
+
+h1.result-heading {
+  display: flex;
+  justify-content: center;
+  font-family: Hanken Grotesk;
+  font-weight: 600;
+  font-size: 23px;
+  color: hsla(0, 0%, 100%, 0.7);
+  margin: 42px 0 39px 0;
+}
+
+
+
+.result-circle__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+  width: 205px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 35px; */
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(244, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+}
+
+
+
+.result-wrapper .result-circle__wrapper h1.result-number {
+  /* display: flex; */
+  font-family: Hanken Grotesk;
+  font-size: 68px;
+  font-weight: 800;
+  margin: 57px 0 8px;
+  color: hsl(0, 0%, 100%);
+  justify-self: center;
+}
+
+
+.result-wrapper .result-circle__wrapper h2.result-number__total {
+  font-size: 18px;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+
+
+.result-wrapper .result-bottom__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.result-wrapper .result-preheading {
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin: 15px 0 10px;
+}
+
+
+
+.result-text {
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.7);
+  line-height: initial;
+  gap: 10px;
+  margin: 7px 21px 24px;
+  padding: 2px 35px 30px;
+  font-size: 18px;
+}
+
+
+
+/* Result End */
+
+/* Mobile Result Start */
+@media only screen and (max-width: 768px) {
+  .result-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0 0 32px 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1.result-heading {
+    margin: 28px 0 27px 0;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result-circle__wrapper {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result-wrapper .result-circle__wrapper h1.result-number {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 40px 0 10px;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result-wrapper .result-circle__wrapper h2.result-number__total {
+    font-size: 14px;
+    
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result-wrapper .result-preheading {
+    font-size: 26px;
+    margin: 12px 0 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .result-text {
+    margin: 0px 25px 5px;
+  padding: 2px 25px 0px;
+  font-size: 16px;
+  }
+}
+
+
+/* Mobile Result End */
+
+/* Summary Start */
+.summary-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 40vh;
+  box-shadow: 2px 20px 30px rgba(240, 240, 240, 0.5);
+  border: none;
+  border-top-right-radius: 34px;
+  border-bottom-right-radius: 34px;
+  gap: 10px;
+}
+
+.summary-wrapper .summary-heading {
+  padding: 40px 25px 10px 43px;
+  font-family: Hanken Grotesk;
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+/* Summary End */
+/* Mobile Summary Start */
+@media only screen and (max-width: 768px) {
+  .summary-wrapper  { 
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .summary-wrapper .summary-heading { 
+    font-size: 20px;
+    padding: 20px 25px 5px 43px;
+  }
+}
+
+/* Mobile Summary End */
+
+/* Reation Start */
+.reaction-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin: 12px 40px 0;
+  padding: 18px;
+  border-radius: 10px ;
+  font-size: 18px;
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction-wrapper .reaction-image {
+  margin-right: 12px;
+}
+
+.reaction-wrapper .reaction-text {
+  color: hsla(0, 100%, 67%);
+  margin-right: 75px;
+}
+
+.reaction-wrapper .reaction-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+.number-wrapper {
+  color: hsl(224, 30%, 27%, 0.3);
+  font-weight: 700;
+}
+/* Reaction End */
+
+/* Memory Start*/
+.memory-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 6px 40px 0;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory-wrapper .memory-image {
+  margin-right: 12px;
+}
+
+.memory-wrapper .memory-text {
+  color: hsla(39, 100%, 56%);
+  margin-right: 75px;
+}
+
+.memory-wrapper .memory-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+/* Memory End */
+/* Verbal Start */
+.verbal-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 6px 40px 0;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal-wrapper .verbal-image {
+  margin-right: 12px;
+}
+
+.verbal-wrapper .verbal-text {
+  color: hsla(166, 100%, 37%);
+  margin-right: 75px;
+}
+
+.verbal-wrapper .verbal-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+/* Verbal End */
+
+/* visual Start */
+.visual-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 6px 40px 0;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual-wrapper .visual-image {
+  margin-right: 12px;
+}
+
+.visual-wrapper .visual-text {
+  color: hsla(234, 85%, 45%);
+  margin-right: 75px;
+}
+
+.visual-wrapper .visual-score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+/* visual End */
+
+/* button Start */
+.button-wrapper {
+  font-weight: 700;
+  font-family: Hanken Grotesk;
+  font-size: 18px;
+  margin: 31px 40px;
+  padding: 17px;
+  border-radius: 35px;
+  border: none;
+  color: hsla(0, 0%, 100%, 0.7);
+  background-image: linear-gradient(
+    180deg,
+    hsla(252, 100%, 67%),
+    hsl(246, 81%, 54%)
+  );
+}
+/* button End */
+
+/* Mobile Button Start */
+@media only screen and (max-width: 768px) {
+  .button-wrapper { 
+    margin: 18px 40px;
+  }
+}
+
+/* Mobile Button End */
